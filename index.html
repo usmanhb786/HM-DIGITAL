@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,33 +41,30 @@
             animation: kenBurns 12s linear infinite alternate;
         }
     </style>
+    <script>
+        // Global shim for process.env to support Gemini API in browser-only environments
+        window.process = window.process || { 
+            env: { 
+                API_KEY: "" 
+            } 
+        };
+    </script>
 <script type="importmap">
 {
   "imports": {
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
-    "react/": "https://esm.sh/react@^19.2.4/",
     "react": "https://esm.sh/react@^19.2.4",
-    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0"
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "vite": "https://esm.sh/vite@^7.3.1"
   }
 }
-</script>
-<script>
-    /**
-     * Shim process.env for static hosting environments like GitHub Pages.
-     * This prevents 'ReferenceError: process is not defined' when the app
-     * attempts to access Gemini API keys or other environment variables.
-     */
-    window.process = window.process || { 
-        env: { 
-            API_KEY: "" // The actual key is injected during the build/execution phase
-        } 
-    };
 </script>
 </head>
 <body class="bg-white text-slate-900 overflow-x-hidden">
     <div id="root"></div>
-    <!-- Load the React application entry point -->
-    <script type="module" src="./index.tsx"></script>
+    <script type="module" src="/index.tsx"></script>
 </body>
 </html>

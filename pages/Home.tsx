@@ -2,7 +2,6 @@
 import React from 'react';
 import SEO from '../components/SEO';
 import HeroSlider from '../components/HeroSlider';
-// Import BUSINESS_INFO from constants to resolve undefined reference in the CTA section
 import { SERVICES, PORTFOLIO, BUSINESS_INFO } from '../constants';
 import { Link } from 'react-router-dom';
 
@@ -48,7 +47,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Process Section with Hover darkening numbers and cyan glow */}
+      {/* Process Section */}
       <section className="py-20 md:py-24 bg-slate-50">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-extrabold text-center mb-16 uppercase tracking-widest">Our Blueprint</h2>
@@ -81,7 +80,7 @@ const Home: React.FC = () => {
               <h2 className="text-4xl font-extrabold mb-4">Portfolio <span className="text-purple-500">Highlights</span></h2>
               <p className="text-slate-500">A showcase of our recent endeavors in the digital realm.</p>
             </div>
-            <Link to="/work" className="bg-slate-900 text-white px-8 py-3 rounded-full hover:bg-slate-800 transition-colors">View All Work</Link>
+            <Link to="/services" className="bg-slate-900 text-white px-8 py-3 rounded-full hover:bg-slate-800 transition-colors">View All Services</Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
