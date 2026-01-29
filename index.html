@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,8 +51,22 @@
   }
 }
 </script>
+<script>
+    /**
+     * Shim process.env for static hosting environments like GitHub Pages.
+     * This prevents 'ReferenceError: process is not defined' when the app
+     * attempts to access Gemini API keys or other environment variables.
+     */
+    window.process = window.process || { 
+        env: { 
+            API_KEY: "" // The actual key is injected during the build/execution phase
+        } 
+    };
+</script>
 </head>
 <body class="bg-white text-slate-900 overflow-x-hidden">
     <div id="root"></div>
+    <!-- Load the React application entry point -->
+    <script type="module" src="./index.tsx"></script>
 </body>
 </html>
