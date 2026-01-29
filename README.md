@@ -1,11 +1,41 @@
-<div align="center">
+# HM Digital Solutions - Premium Agency Website
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A world-class, responsive, and SEO-optimized website for **HM Digital Solutions**, based in Lahore, Pakistan. Built with a focus on premium UI/UX, modern aesthetics, and lead generation.
 
-  <h1>Built with AI Studio</h2>
+## 🚀 Features
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- **Modern Tech Stack**: React (ES6+), Tailwind CSS, and Google Gemini API.
+- **Premium UI/UX**: Light minimal theme with soft cyan and purple accents. High-performance hover effects and smooth transitions (300ms).
+- **Hero Slider**: Autoplay hero slider featuring all core services with high-resolution mockups.
+- **AI-Powered Support**: Integrated ChatBot powered by Gemini 2.0 Flash for instant client inquiries.
+- **Admin Dashboard**: Secure `/admin` panel with an AI Copywriter assistant and image asset manager simulation.
+- **SEO Ready**: Dynamic meta tags per page, optimized H1 hierarchy, `sitemap.xml`, and `robots.txt`.
+- **Mobile First**: Fully responsive across all devices (360px, 390px, 414px+).
+- **Lead Generation**: Specialized contact forms and floating WhatsApp integration.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## 🛠 Tech Stack
 
-</div>
+- **Frontend**: React 19, Tailwind CSS
+- **AI Integration**: @google/genai (Gemini API)
+- **Deployment**: Optimized for Firebase Hosting
+- **Routing**: React Router DOM (HashRouter for compatibility)
+
+## 📁 Directory Structure
+
+- `components/`: Reusable UI elements (Navbar, Footer, SEO, ChatBot).
+- `pages/`: Page-level components (Home, About, Services, Contact, Admin).
+- `constants.tsx`: Centralized business information and content data.
+- `types.ts`: TypeScript interfaces for consistency.
+
+## 📦 Getting Started
+
+1. Clone the repository.
+2. Ensure you have your `API_KEY` configured in your environment for Gemini AI features.
+3. Deploy to Firebase using `firebase deploy`.
+
+## 📞 Contact
+
+**HM Digital Solutions**  
+Address: 12 Haseeb Block, Chenab Road, Azam Garden, Multan Road, Lahore.  
+WhatsApp: +923225700804  
+Email: hmvisuals804@gmail.com

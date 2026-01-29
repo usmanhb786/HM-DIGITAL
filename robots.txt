@@ -1,0 +1,4 @@
+
+User-agent: *
+Allow: /
+Sitemap: https://hmdigitalsolutions.com/sitemap.xml
